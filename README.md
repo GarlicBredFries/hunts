@@ -1,0 +1,1 @@
+If you ever look in the source code of a hunt, you may see the solution. I do not hide the solutions.
