@@ -1,0 +1,88 @@
+img.theme1pics {
+  width: 49%;
+}
+
+img.theme2pics {
+  width: 24%;
+}
+
+img.theme3pics {
+  margin-top: 6px;
+}
+
+hr.thick {
+  height: 12px;
+  background-color: black;
+}
+hr.thin {
+  height: 3px;
+  background-color: black;
+}
+
+.taxilog {
+  display: none;
+  place-items: center;
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  border: 6px solid black;
+  border-radius: 50% 50% 50% 0%;
+  padding: 6px;
+  margin-top: 12px;
+  margin-left: 320px;
+  margin-bottom: 0px;
+}
+
+button {
+  background-color: #EEEEEE;
+  text-align: center;
+  border: 3px solid black;
+  padding: 6px;
+  border-radius: 12px;
+}
+
+button.hide {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+input {
+  font-size: 18px;
+  padding: 6px;
+  border: 1px solid;
+  border-radius: 6px;
+}
+
+button:hover {background-color: #CCCCCC;}
+button:active {background-color: #DDDDDD}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  width: 180px;
+}
+
+@media only screen and (max-width: 600px) {
+  img.theme1pics {
+    width: 99%;
+  }
+  img.theme2pics {
+    width: 49%
+  }
+}

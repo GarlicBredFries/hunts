@@ -1,11 +1,272 @@
 <!DOCTYPE html>
 <head>
     <title>GBF's hunts</title>
+    <script src="hunt1.js"></script>
+    <link rel="icon" type="image/png" href="../../favicon.png">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+<!--
+Please don't look at my spaghetti code    D:
+Note that if you are inspecting my code, the answers are
+ very plainly written out
+-->
 <body>
     <p>
-        hi
-        
+        Notes:<br>
+        This information in this header will not be used in the hunt.<br>
+        Inspect element/looking at the code will not be necessary for this hunt.
+        The answers are written out plainly in the code, so you will spoil yourself.<br>
+        I hopefully accounted for case sensitivity and spaces, so if the answer was "GarlicBredFries",
+        then "GarlicBredFries", "Garlic Bred Fries", and "garlicbredfries" should all be accepted.<br>
+        I used Google Translate for Theme 3, so the translations may be broken/inaccurate, and I apologize for that. <br>
     </p>
+    <h2 style = "color:red">
+        This site does not save cookies, 
+        so please make sure to keep your answers somewhere.
+    </h2>
+    <hr class="thick">
+
+    <h2 style="display: inline">
+        <button type="button" id="hide1" class="hide" onclick="hide(1)">o</button>
+        Theme 1: Year of the Snake
+        <input type="text" id="ans1">
+        <button type="button" id="submit1" onclick="check(1)">Submit</button>
+    </h2>
+    <p id="wrong1" style="display:none">Hmm, not what I'm looking for.</p>
+    <p id="right1" style="display:none">Sounds like something revealed itself below.</p>
+    <div id="theme1" style="display:none">
+        <p>
+            <a href="https://crosshare.org/crosswords/SWwewwxTwmp2qf3KwW7Y/theme-1-year-of-the-snake">Crosshare Link</a>
+        </p>
+        <img class="theme1pics" src="pics/hunt1theme1pic.png" alt="Crossword grid. If you
+        see this, the image is borked, please use the crosshare link">
+        <div class="row">
+            <div class="column">
+                <h3>Across</h3>
+                <p>
+                    <b>1A</b>: What people may have said on the 29th of January in 2025 (5,5,3,4)
+                    <br><b>17A</b>: Boxer AKA Cassius Marcellus Clay Jr. (3)
+                    <br><b>18A</b>: Outdoor recreation services corporation, according to Wikipedia (3, abbr.)
+                    <br><b>19A</b>: What those who are saying 1A might be eating (2,4)
+                    <br><b>20A</b>: Base or cast (3)
+                    <br><b>21A</b>: Not without (2)
+                    <br><b>23A</b>: A repetitive name for a taboo (2-2)
+                    <br><b>25A</b>: Filipino island inside a lake on an island inside a lake on an island (2. 4)
+                    <br><b>28A</b>: &Eta; <- this is not Latin script (3)
+                    <br><b>29A</b>: This title refers to Aang (4, abbr.)
+                    <br><b>31A</b>: Preceding constrictor, a fitting animal for the theme of the puzzle (3)
+                    <br><b>32A</b>: This word's origin may have come from this generation's common activity growing up in 2020 (6)
+                    <br><b>33A</b>: Syria's abbreviation backwards (3)
+                    <br><b>34A</b>: Where a spade may be bigger (3)
+                    <br><b>35A</b>: A page that contains corrections for a textbook (6)
+                    <br><b>36A</b>: [This clue is intentionally left blank]
+                </p>
+            </div>
+            <div class="column">
+                <h3>Down</h3>
+                <p>
+                    <b>1D</b>: Writing you may see when saying 1A (5)
+                    <br><b>2D</b>: Distant or remote (5)
+                    <br><b>3D</b>: C/D, perhaps (2)
+                    <br><b>4D</b>: An ad or publicity stunt (5)
+                    <br><b>5D</b>: Its capital is Sanaa (5)
+                    <br><b>6D</b>: The surname of the fictional Claude Émile Jean-Baptiste (5)
+                    <br><b>7D</b>: Preceding kill, a game with the phrase "Blood is Fuel" on its poster (5)
+                    <br><b>8D</b>: Doctor against Bond (2)
+                    <br><b>9D</b>: Garner (5)
+                    <br><b>10D</b>: After a deer, a female deer (2)
+                    <br><b>11D</b>: She would be called this by an aunt (5)
+                    <br><b>12D</b>: May accomplish the same thing as a return (5)
+                    <br><b>13D</b>: Shortened sound of confusion (3)
+                    <br><b>14D</b>: First grade (4,1)
+                    <br><b>15D</b>: What a newspaper salesman may yell (5)
+                    <br><b>16D</b>: A military airshow, considered to be the largest (4, abbr.)
+                    <br><b>22D</b>: Where you can find Love (or Curry) (3, abbr.)
+                    <br><b>24D</b>: The opposite of a shake, perhaps (3)
+                    <br><b>26D</b>: Writer Rand (3)
+                    <br><b>27D</b>: The focus of study for a Juris Doctor (3)
+                    <br><b>30D</b>: The name of Weezing, the Pokémon, before it was considered possibly offensive to an American audience (2, abbr.)
+                    <br><b>35D</b>: Gaming convention whose last occurrence was in 2021 (1,1)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <p id="wrong1" style="display:none">Hmm, not what I'm looking for.</p>
+    <p id="right1" style="display:none">Sounds like something revealed itself below.</p>
+    <hr class="thick">
+    <h2 style="display: inline">
+        <button type="button" id="hide2" class ="hide" onclick="hide(2)">o</button>
+        Theme 2: I've Been Here the Whole Time
+        <input type="text" id="ans2">
+        <button type="button" id="submit2" onclick="check(2)">Submit</button>
+    </h2>
+    <p id="wrong2" style="display:none">Hmm, not what I'm looking for.</p>
+    <p id="right2" style="display:none">Sounds like something revealed itself below.</p>
+    <div id="theme2" style="display:none">
+        <p>
+            &nbsp;Brennan Lee Mulligan is known for his (to put it mildly) aversion 
+            to losing at which point it was tested on Game Changer. However, because 
+            I can't remember the actual birds used in the episode and don't have a 
+            dropout account, here's a made up story.<br>
+            &nbsp;Brennan was expected to say (2), but instead mentioned (4). This 
+            was not what was expected of him. He was later trying to exclaim (1) 
+            was the bird, but was issued the correction: (3). It was later explained 
+            that what came before the bird was as important as the bird itself. Who 
+            told this to him? 
+        </p>
+        <img class="theme2pics" id="iiwi" src="https://upload.wikimedia.org/wikipedia/commons/1/15/Vestiaria_coccinea_-Hawaii_-adult-8_%283%29.jpg">
+        <img class="theme2pics" id="auk" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Parakeetauklets2.jpg/2560px-Parakeetauklets2.jpg">
+        <img class="theme2pics" id="hummingbird" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Bee_hummingbird_%28Mellisuga_helenae%29_adult_male_non-breeding.jpg">
+        <img class="theme2pics" id="raven" src="https://upload.wikimedia.org/wikipedia/commons/3/31/3782_Common_Raven_in_flight.jpg">
+    </div>
+    
+    <hr class="thick">
+    <h2 style="display: inline">
+        <button type="button" id="hide3" class="hide" onclick="hide(3)">v</button>
+        Theme 3: Lost In Translation
+        <input type="text" id="ans3">
+        <button type="button" id="submit3" onclick="check(3)">Submit</button>
+    </h2>
+    <p id="wrong3" style="display:none">Hmm, not what I'm looking for.</p>
+    <p id="right3" style="display:none">Sounds like something revealed itself below.</p>
+    <div id="theme3">
+        <p id="dir3">Please click on a taxi to begin.</p>
+        <p id="taxilog1" class="taxilog">im walkin here</p>
+        <img class="theme3pics" src="pics/hunt1theme3taxi1.png" onclick="say(1)" style="display:inline">
+
+        <p id="taxilog2" class="taxilog">not just bikes</p>
+        <img class="theme3pics" src="pics/hunt1theme3taxi2.png" onclick="say(2)" style="display:inline">
+
+        <p id="taxilog3" class="taxilog">are you not entertained</p>
+        <img class="theme3pics" src="pics/hunt1theme3taxi3.png" onclick="say(3)" style="display:inline">
+
+        <p id="taxilog4" class="taxilog">hon hon hon</p>
+        <img class="theme3pics" src="pics/hunt1theme3taxi4.png" onclick="say(4)" style="display:inline">
+
+        <p id="taxilog5" class="taxilog">the movie about the birds</p>
+        <img class="theme3pics" src="pics/hunt1theme3taxi5.png" onclick="say(5)" style="display:inline">
+
+        <p id="taxilog6" class="taxilog">fast and furious drift</p>
+        <img class="theme3pics" src="pics/hunt1theme3taxi6.png" onclick="say(6)" style="display:inline">
+
+        <p id="taxilog7" class="taxilog">kpop means ok boomer</p>
+        <img class="theme3pics" src="pics/hunt1theme3taxi7.png" onclick="say(7)" style="display:inline">
+    </div>
+
+    <hr class="thick">
+    <h2 style="display: inline">
+        <button type="button" id="hide4" class="hide" onclick="hide(4)">v</button>
+        Theme 4: Gameshow Showdown
+        <input type="text" id="ans4">
+        <button type="button" id="submit4" onclick="check(4)">Submit</button>
+    </h2>
+    <p id="wrong4" style="display:none">Hmm, not what I'm looking for.</p>
+    <p id="right4" style="display:none">Sounds like something revealed itself below.</p>
+    <div id="theme4">
+        <p>hi</p>
+        <p>All these moves come from <a href="https://www.youtube.com/watch?v=n0xItVlsQCI">this video by ZaneGames</a></p>
+    </div>
+    
+    <hr class="thick">
+    <h2 style="display: inline">
+        <button type="button" id="hide5" class="hide" onclick="hide(5)">v</button>
+        Theme 5: Pitch, Yaw, Roll
+        <input type="text" id="ans5">
+        <button type="button" id="submit5" onclick="check(5)">Submit</button>
+    </h2>
+    <p id="wrong5" style="display:none">Hmm, not what I'm looking for.</p>
+    <p id="right5" style="display:none">Sounds like something revealed itself below.</p>
+    <div id="theme5">
+        <p>hi5</p>
+    </div>
+    
+
+    <hr class="thick">
+    <h2 style="display: inline">
+        <button type="button" id="hide6" class="hide" onclick="hide(6)">v</button>
+        Theme 6: QR
+        <input type="text" id="ans6">
+        <button type="button" id="submit6" onclick="check(6)">Submit</button>
+    </h2>
+    <p id="wrong6" style="display:none">Hmm, not what I'm looking for.</p>
+    <p id="right6" style="display:none">Sounds like something revealed itself below.</p>
+    <div id="theme6">
+        <p>hi6</p>
+    </div>
+
+
+    <hr class="thick">
+    <h2 style="display: inline">
+        <button type="button" id="hide7" class="hide" onclick="hide(7)" style="display:none">v</button>
+        METAPUZZLE Theme 7: Reduce, Reuse, Recycle
+        <input type="text" id="ans7">
+        <button type="button" id="submit7" onclick="check(7)">Submit</button>
+    </h2>
+    <p id="wrong7" style="display:none">Hmm, not what I'm looking for.</p>
+    <p id="right7" style="display:none">Sounds like something revealed itself below.</p>
+    <div id="theme7">
+    <p>
+        Solve the puzzles to receive clues below.<br>
+        7 answers, 1 left. What was happening earlier?
+    </p>
+        <div id="meta7" style="display: none;">
+            <h2 style="color:green"><b>Congratulations! You solved the hunt!</b></h2>
+            <p>
+                Sorry there's no fireworks or anything. The fact that I managed to get this working at all is a miracle.
+            </p>
+        </div>
+
+        <div id="meta1" style="display: none;">
+            <hr class="thin">
+            <h2>Metapuzzle Part 1</h2>
+            <p>
+                What a snake charmer may do to a snake, like Jack Black's attempt in <i>Jumanji: Welcome to the Jungle</i> (5,4)<br><br>
+                Cryptic alternative:<br>Crumbling towers and hostile sight (5,4)
+            </p>
+        </div>
+
+        <div id="meta2" style="display: none;">
+            <hr class="thin">
+            <h2>Metapuzzle Part 2</h2>
+            <p>
+                Brennan was able to receive a point when he decided to yell <br>
+                <img class="theme2pics" id="owl" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Bubo_bubo_sibiricus_-_01.JPG/800px-Bubo_bubo_sibiricus_-_01.JPG">
+            </p>
+        </div>
+
+        <div id="meta3" style="display: none;">
+            <hr class="thin">
+            <h2>Metapuzzle Part 3</h2>
+            <p>
+                <div id="taxilog0" class="taxilog" style="display:none">जयपुर<br>कृपया</div>
+                <img class="theme3pics" src="pics/hunt1theme3taxi.png" onclick="say(0)">
+            </p>
+        </div>
+
+        <div id="meta4" style="display: none;">
+            <hr class="thin">
+            <h2>Metapuzzle Part 4</h2>
+            <p>
+                BBBBBBBBB a snake charmer may do to a snake, like Jack Black's attempt in <i>Jumanji: Welcome to the Jungle</i> (5,4)
+            </p>
+        </div>
+        
+        <div id="meta5" style="display: none;">
+            <hr class="thin">
+            <h2>Metapuzzle Part 5</h2>
+            <p>
+                CCCCCCC a snake charmer may do to a snake, like Jack Black's attempt in <i>Jumanji: Welcome to the Jungle</i> (5,4)
+            </p>
+        </div>
+
+        <div id="meta6" style="display: none;">
+            <hr class="thin">
+            <h2>Metapuzzle Part 6</h2>
+            <p>
+                a snake charmer may do to a snake, like Jack Black's attempt in <i>Jumanji: Welcome to the Jungle</i> (5,4)
+            </p>
+        </div>
+    </div>
 </body>
