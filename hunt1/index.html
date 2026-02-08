@@ -12,6 +12,9 @@ Note that if you are inspecting my code, the answers are
  very plainly written out
 -->
 <body>
+    <button class="save" onclick="saveAns()" id="save">Save answers<br>for 30 days</button>
+    <button class="clear" onclick="clearCookies()" id="clear">Clear cookies</button>
+
     <p>
         Notes:<br>
         This information in this header will not be used in the hunt.<br>
@@ -21,12 +24,12 @@ Note that if you are inspecting my code, the answers are
         then "GarlicBredFries", "Garlic Bred Fries", and "garlicbredfries" should all be accepted.<br>
         I used Google Translate for Theme 3, so the translations may be broken/inaccurate, and I apologize for that. <br>
     </p>
-    <h2 style = "color:red">
+    <!--<h2 style = "color:red">
         This site does not save cookies, 
         so please make sure to keep your answers somewhere.
-    </h2>
+    </h2>-->
     <hr class="thick">
-
+    
     <h2 style="display: inline">
         <button type="button" id="hide1" class="hide" onclick="hide(1)">o</button>
         Theme 1: Year of the Snake
@@ -37,7 +40,7 @@ Note that if you are inspecting my code, the answers are
     <p id="right1" style="display:none">Sounds like something revealed itself below.</p>
     <div id="theme1" style="display:none">
         <p>
-            <a href="https://crosshare.org/crosswords/SWwewwxTwmp2qf3KwW7Y/theme-1-year-of-the-snake">Crosshare Link</a>
+            <a href="https://crosshare.org/crosswords/SWwewwxTwmp2qf3KwW7Y/theme-1-year-of-the-snake" target="_blank">Crosshare Link</a>
         </p>
         <img class="theme1pics" src="pics/hunt1theme1pic.png" alt="Crossword grid. If you
         see this, the image is borked, please use the crosshare link">
@@ -132,6 +135,7 @@ Note that if you are inspecting my code, the answers are
     <p id="wrong3" style="display:none">Hmm, not what I'm looking for.</p>
     <p id="right3" style="display:none">Sounds like something revealed itself below.</p>
     <div id="theme3">
+        <p><br></p>
         <p id="dir3">Please click on a taxi to begin.</p>
         <p id="taxilog1" class="taxilog">im walkin here</p>
         <img class="theme3pics" src="pics/hunt1theme3taxi1.png" onclick="say(1)" style="display:inline">
@@ -223,7 +227,7 @@ Note that if you are inspecting my code, the answers are
             <h2>Metapuzzle Part 1</h2>
             <p>
                 What a snake charmer may do to a snake, like Jack Black's attempt in <i>Jumanji: Welcome to the Jungle</i> (5,4)<br><br>
-                Cryptic alternative:<br>Crumbling towers and hostile sight (5,4)
+                Cryptic backup:<br>Crumbling towers and hostile sight (5,4)
             </p>
         </div>
 

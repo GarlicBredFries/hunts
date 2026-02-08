@@ -8,6 +8,7 @@ img.theme2pics {
 
 img.theme3pics {
   margin-top: 6px;
+  width: 51%
 }
 
 hr.thick {
@@ -39,6 +40,18 @@ button {
   border: 3px solid black;
   padding: 6px;
   border-radius: 12px;
+}
+
+button.save {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+button.clear {
+  position: fixed;
+  top: 20px;
+  right: 144px;
 }
 
 button.hide {
@@ -83,5 +96,8 @@ input {
   }
   img.theme2pics {
     width: 49%
+  }
+  img.theme3pics {
+    width: 99%
   }
 }

@@ -1,7 +1,45 @@
 //const answers = ["lmao","boa","samreich"]
 answers = ["secret garden", "boa", "samreich", "cabride", "squee", "aheadoftime", "yamask","goinggreen"];
+userans = ["---", " ", " ", " ", " ", " ", " ", " "]
 hiddens = [0,0,0,0,0,0,0,0];
 solveds = [0,0,0,0,0,0,0,0];
+
+window.addEventListener("load", () => {
+    let cookieData = document.cookie;
+    cookieData = cookieData.split("; ");
+    lenCookieData = cookieData.length;
+
+    for (let i=0; i < lenCookieData; i++) {
+        document.getElementById("clear").innerHTML += "<br>"+cookieData[i];
+    }
+    /*if (cookieData.length() != 0) {
+        document.getElementById("save").innerHTML = "klasdhkjhsadf";
+    }*/
+});
+
+function clearCookies() {
+    console.log("hi");
+    document.cookie = "saveDate=oops; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; SameSite=None; Secure";
+}
+
+function saveAns() {
+    let saveDate = new Date();
+    let expireDate = Date.now() + 60*60*1000;
+    m = saveDate.getMonth()+1;
+    if (m < 10) {m = "0"+m;}
+    curDate = saveDate.getFullYear() + "-" + m + "-" + saveDate.getDate();
+    m = saveDate.getMinutes();
+    if (m < 10) {m = "0"+m;}
+    s = saveDate.getSeconds();
+    if (s < 10) {s = "0"+s;}
+    k = 1000 + saveDate.getMilliseconds();
+    l = k.toString().slice(1,4);
+    curTime = saveDate.getHours() + ":" + m + ":" + s + "." + l;
+    document.getElementById("save").innerHTML = "Save answers<br>for 30 days";
+    document.getElementById("save").innerHTML += "<br>Saved!" + "<br><br>Last Save:<br>" + curDate + "<br>" + curTime;
+    
+    document.cookie = "saveDate="+saveDate.toUTCString()+"; expires=" + expireDate + "; path=/; SameSite=None; Secure";
+}
 
 function hide(sect) {
     if (hiddens[sect]==0) {
@@ -58,10 +96,11 @@ function check(sect) {
 
 taxisays = [
     [
+        "",
         "जयपुर<br>कृपया"
     ],
     [
-        "",
+        "1 New York City, USA",
         "Hello, can you please take me to Radio City Music Hall.",
         "Please take me to Rockefeller Center.",
         "I would like to go to Grand Central Terminal",
@@ -70,7 +109,7 @@ taxisays = [
         "Thank you for the ride!"
     ],
     [
-        "",
+        "2 Amsterdam, Netherlands",
         "We moeten naar het Grachtenmuseum",
         "Breng ons alstublieft naar het H'ART museum",
         "Het wetenschapsmuseum NEMO zag er interessant uit. Kunnen we daarheen?",
